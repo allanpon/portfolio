@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+    <section class="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-linkedin coloricon"></i></a>
+            <a href="#"><i class="fab fa-github coloricon"></i></a>
+        </div>
+
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">A Propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p class="copyright"> Copyright © Allan Ponchaut 2021-<script>document.write(new Date().getFullYear())</script></p>
+    </section>
+{% endblock %}
+</body>
+</html>
