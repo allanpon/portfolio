@@ -161,6 +161,12 @@ body {
     transition: all 0.3s ease 0s;
 }
 
+.footer ul li p {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.4;
+}
+
 .footer ul li {
     display: inline-block;
     padding: 0 15px;
