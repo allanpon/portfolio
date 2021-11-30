@@ -1,5 +1,13 @@
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+/* Merriweather */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Open+Sans&display=swap');
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
     box-sizing: border-box;
+
 }
 
 body {
@@ -7,9 +15,33 @@ body {
     padding: 0;
 }
 
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /*
     HEADER - BEGIN
  */
+
+.nom p {
+    margin: 0 0;
+}
 
 .navbar {
     display: flex;
@@ -211,31 +243,54 @@ hr.solid {
     INDEX - BEGIN
 */
 
-.line-1{
-    position: relative;
-    top: 50%;
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-100%);
+.titre-dev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 420px;
+    color: white;
+    background-image: url('../images/webdev.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-/* Animation */
-.anim-typewriter{
-    animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
+.titre-dev a {
+    text-decoration: none;
+    color: inherit;
 }
-@keyframes typewriter{
-    from{width: 0;}
-    to{width: 15.5em;}
+
+.titre-dev a:visited {
+    text-decoration: none;
+    color: inherit;
 }
-@keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
-    to{border-right-color: transparent;}
+
+#typewriter {
+    margin-top: 0;
+    color: white;
+    font-size: 100%;
+}
+
+.button-cv {
+    padding: 9px 25px;
+    background: rgba(74, 140, 106, 0.8);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+.button-cv:hover {
+    background: rgba(62, 117, 89, 1);
+}
+
+@media screen and (min-width: 480px) {
+    #typewriter {
+        font-size: 200%;
+    }
 }
 
 /*
