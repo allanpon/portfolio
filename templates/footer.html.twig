@@ -13,15 +13,20 @@
 <body>
 {% block body %}
     <section class="footer">
+        <hr class="solid">
+
         <div class="social">
-            <a href="#"><i class="fab fa-linkedin coloricon"></i></a>
-            <a href="#"><i class="fab fa-github coloricon"></i></a>
+            <a href="https://www.linkedin.com/in/allanpon/"><i class="fab fa-linkedin coloricon"></i></a>
+            <p>•</p>
+            <a href="https://github.com/allanpon/"><i class="fab fa-github coloricon"></i></a>
         </div>
 
         <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">A Propos</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="{{ path('home') }}">Accueil</a></li>
+            <li><p>•</p></li>
+            <li><a href="{{ path('about') }}">A Propos</a></li>
+            <li><p>•</p></li>
+            <li><a href="{{ path('contact') }}">Contact</a></li>
         </ul>
 
         <ul>

@@ -115,14 +115,34 @@ body {
     color: dimgray;
 }
 
+hr.solid {
+    border-top: 1px solid #bbb;
+    width: 25%;
+}
+
 .footer {
     padding: 40px 0;
+    bottom: 0;
+    width: 100%;
+
 }
 
 .footer .social {
     text-align: center;
     padding-bottom: 25px;
     color: dimgray;
+}
+
+.footer .social p {
+    font-size: 20px;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px;
+    opacity: 0.4;
 }
 
 .footer .social a {
@@ -185,4 +205,39 @@ body {
 
 /*
     FOOTER - END
+*/
+
+/*
+    INDEX - BEGIN
+*/
+
+.line-1{
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-100%);
+}
+
+/* Animation */
+.anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 15.5em;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+}
+
+/*
+    INDEX - END
 */
