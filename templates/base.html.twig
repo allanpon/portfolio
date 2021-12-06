@@ -3,16 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Portfolio • {% block title %}{% endblock %}</title>
-        <link rel="icon" type="image/png" href="{{ asset('images/favicon.png') }}"/>
+        <link rel="icon" type="image/png" href="{{ asset('build/icons/favicon.png') }}"/>
         {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
-        {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
-        {% endblock %}
 
-        {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
-        {% endblock %}
     </head>
     {% include 'header.html.twig' %}
     <body>
