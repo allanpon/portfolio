@@ -5,26 +5,26 @@
 {% block body %}
     <div class="titre-dev">
         <p id="typewriter">Développeur Web Symfony.</p>
-        <button class="button-cv" type="button">Voir mon CV</button>
+        <button class="button-cv" type="button"><a href="{{ asset('build/cv.pdf') }}">Voir mon CV</a></button>
     </div>
 
     <h1>Projets</h1>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </div>
+
     <div id="container">
 
         <div class="product-details">
 
             <h1>Marathon Web</h1>
 
-            <p class="information">Création d'un site web en équipe en deux jours. Nous avons réalisé le back-end.</p>
+            <p class="information">Création d'un site web en deux jours. Nous avons réalisé le back-end et le frond-end. Le site était un site de gestion de série. </p>
 
             <div class="control">
 
                 <button class="btn">
-                    <span class="price">Code Source</span>
-                    <span class="shopping-cart"><i class="fab fa-github " aria-hidden="true"></i></span>
+                    <span class="price">Code</span>
+                    <span class="shopping-cart"><i class="fa fa-ban" aria-hidden="true"></i></span>
                     <span class="buy">Github</span>
                 </button>
 
@@ -34,12 +34,14 @@
 
         <div class="product-image">
 
-            <img src="{{ asset('build/images/webdev.8a2b7999.png') }}" alt="test">
+            <img src="{{ asset('build/images/marathon.png') }}" class="marathon">
 
             <div class="info">
                 <h2>Compétence</h2>
                 <ul>
                     <li>PHP, Laravel</li>
+                    <li>Utilisation de Git</li>
+                    <li>Front-end & Back-end</li>
                     <li>Communication</li>
                 </ul>
             </div>
@@ -47,84 +49,120 @@
 
     </div>
 
-
-
     </div>
 
-    <div class="projet">
-        <div class="projet-infos">
-        <h2>Marathon Web</h2>
+    <div id="container">
 
-        <h3>Compétences</h3>
-        <ul>
-            <li><p>PHP, Laravel</p></li>
-            <li><p>Communication</p></li>
-        </ul>
+        <div class="product-details">
 
-        <h3>Information</h3>
-        <p>
+            <h1>Porfolio</h1>
 
-        </p>
+            <p class="information">Portfolio avec tous mes projets et des informations sur moi.</p>
 
-        <h3>Code Source</h3>
+            <div class="control">
+
+                <button class="btn"><a href="https://github.com/allanpon/portfolio">
+                    <span class="price">Code</span>
+                    <span class="shopping-cart"><i class="fab fa-github" aria-hidden="true"></i></span>
+                    <span class="buy">Github</span>
+                    </a></button>
+
+            </div>
+
         </div>
+
+        <div class="product-image">
+
+            <img src="{{ asset('build/images/portfolio.png') }}" class="portfolio">
+
+            <div class="info">
+                <h2>Compétences</h2>
+                <ul>
+                    <li>PHP, Symfony</li>
+                    <li>HTML, CSS, Javascript</li>
+                    <li>Hébergement de site web</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 
-    <div class="projet">
-        <h2>Portfolio</h2>
-
-        <h3>Compétences</h3>
-        <ul>
-            <li><p>PHP, Symfony</p></li>
-            <li><p>HTML, CSS, Javascript</p></li>
-            <li><p>Hébergement de site web</p></li>
-        </ul>
-
-        <h3>Information</h3>
-        <p>
-            Un portfolio est un dossier personnel dans lequel les acquis de formation et les acquis de l'expérience d'une personne sont définis et démontrés en vue d'une
-            reconnaissance par un établissement d'enseignement ou un employeur. En France, on voit parfois le terme de portefeuille de compétences.
-        </p>
-
-        <h3>Code Source</h3>
-        <a href="https://github.com/allanpon/portfolio"><p>Github</p></a>
     </div>
 
-    <div class="projet">
-        <h2>Labyrinthe</h2>
+    <div id="container">
 
-        <h3>Compétences</h3>
-        <ul>
-            <li><p>Communication, travail d'équipe</p></li>
-            <li><p>Java, POO</p></li>
-            <li><p>Git</p></li>
-        </ul>
+        <div class="product-details">
 
-        <h3>Information</h3>
-        <p>
-            Réalisation d'un clone du jeu de plateau Labyrinthe en Java. Ce projet a été fait en équipe. J'étais chargé d'assurer la communication dans mon équipe, ainsi que d'assurer la
-            communication entre mon équipe et les enseignants. J'ai assuré la communication entre les enseignants et les étudiants pour qu'ils puissent voir l'évolution de notre projet
-            ou pour que nous puissions poser des questions si nous en avions.
-        </p>
+            <h1>Labyrinthe</h1>
 
-        <h3>Code Source</h3>
-        <a href="https://github.com/allanpon/labyrinthe"><p>Github</p></a>
+            <p class="information">Jeu de labyrinthe réalisé en équipe. Codé en Java en utilisant une librarie graphique.</p>
+
+            <div class="control">
+
+                <button class="btn"><a href="https://github.com/allanpon/labyrinthe">
+                    <span class="price">Code</span>
+                    <span class="shopping-cart"><i class="fab fa-github" aria-hidden="true"></i></span>
+                    <span class="buy">Github</span>
+                    </a></button>
+
+            </div>
+
+        </div>
+
+        <div class="product-image">
+
+            <img src="{{ asset('build/images/labyrinthe.gif') }}" class="labyrinthe">
+
+            <div class="info">
+                <h2>Compétences</h2>
+                <ul>
+                    <li>Communication</li>
+                    <li>Travail d'équipe</li>
+                    <li>Java, POO</li>
+                    <li>Git</li>
+                    <li>Planification de projet</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 
-    <div class="projet">
-        <h2>Python Challenge</h2>
-        <h3>Compétences</h3>
-        <ul>
-            <li><p>Algorithmie</p></li>
-            <li><p>Python</p></li>
-        </ul>
+    </div>
 
-        <h3>Information</h3>
-        <p>
-            Un petit challenge où l'on devait résoudre quelques problèmes en Python.
-        </p>
+    <div id="container">
 
-        <h3>Code Source</h3>
-        <a href="https://github.com/allanpon/pythonchallenge2020"><p>Github</p></a>
+        <div class="product-details">
+
+            <h1>Sokoban</h1>
+
+            <p class="information">Clone de Sokoban réalisé en équipe. Codé en Python en utilisant la librairie PyQt 5. </p>
+
+            <div class="control">
+
+                <button class="btn"><a href="https://github.com/allanpon/sokoban">
+                    <span class="price">Code</span>
+                    <span class="shopping-cart"><i class="fab fa-github" aria-hidden="true"></i></span>
+                    <span class="buy">Github</span>
+                    </a></button>
+
+            </div>
+
+        </div>
+
+        <div class="product-image">
+
+            <img src="{{ asset('build/images/sokoban.gif') }}" class="sokoban">
+
+            <div class="info">
+                <h2>Compétences</h2>
+                <ul>
+                    <li>Algorithmie</li>
+                    <li>Python</li>
+                    <li>Utilisation d'une librairie</li>
+                    <li>Planification de projet</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 {% endblock %}

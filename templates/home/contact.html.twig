@@ -6,8 +6,27 @@
 {% block javascript %} {{ parent() }} {% endblock %}
 
 {% block body %}
-    <div class="contact">
-        <h1>Contact</h1>
-        <p>Cette page est en construction.</p>
+    <div class="mail">
+        <h1>Envoyer un mail</h1>
+        <form class="contact-form" action="./contactform.php" method="post">
+            <input type="text" name="name" placeholder="Nom">
+            <input type="text" name="mail"placeholder="E-mail">
+            <input type="text" name="subject" placeholder="Sujet">
+            <textarea name="message" class="mail-message" placeholder="Message"></textarea>
+            <button type="submit" name="submit">ENVOYER</button>
+        </form>
     </div>
+
+<div class="about">
+    <h1>Contact</h1>
+    <ul>
+        <li><p><img class="fa fa-phone"> 07 49 41 71 41</p></li>
+        <li><a href="mailto:allanponchaut2@gmail.com"><img class="fa fa-envelope"> allanponchaut2@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/allanpon/"><img class="fab fa-linkedin-in"> in/allanpon</a></li>
+        <li><a href="https://github.com/allanpon/"><img class="fab fa-github"> /allanpon</a></li>
+        <li><p><img class="fa fa-home"> 22, rue de l'abbaye, 62110 Hénin-Beaumont</p></li>
+    </ul>
+</div>
+
+
 {% endblock %}
