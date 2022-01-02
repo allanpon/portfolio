@@ -2,12 +2,129 @@
 
 {% block title %}Accueil{% endblock %}
 
-{% block stylesheets %} {{ parent() }} {% endblock %}
-{% block javascript %} {{ parent() }} {% endblock %}
-
 {% block body %}
     <div class="titre-dev">
-        <p id="typewriter"></p>
+        <p id="typewriter">Développeur Web Symfony.</p>
         <button class="button-cv" type="button">Voir mon CV</button>
+    </div>
+
+    <h1>Projets</h1>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div id="container">
+
+        <div class="product-details">
+
+            <h1>Marathon Web</h1>
+
+            <p class="information">Création d'un site web en équipe en deux jours. Nous avons réalisé le back-end.</p>
+
+            <div class="control">
+
+                <button class="btn">
+                    <span class="price">Code Source</span>
+                    <span class="shopping-cart"><i class="fab fa-github " aria-hidden="true"></i></span>
+                    <span class="buy">Github</span>
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="product-image">
+
+            <img src="{{ asset('build/images/webdev.8a2b7999.png') }}" alt="test">
+
+            <div class="info">
+                <h2>Compétence</h2>
+                <ul>
+                    <li>PHP, Laravel</li>
+                    <li>Communication</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+    <div class="projet">
+        <div class="projet-infos">
+        <h2>Marathon Web</h2>
+
+        <h3>Compétences</h3>
+        <ul>
+            <li><p>PHP, Laravel</p></li>
+            <li><p>Communication</p></li>
+        </ul>
+
+        <h3>Information</h3>
+        <p>
+
+        </p>
+
+        <h3>Code Source</h3>
+        </div>
+    </div>
+
+    <div class="projet">
+        <h2>Portfolio</h2>
+
+        <h3>Compétences</h3>
+        <ul>
+            <li><p>PHP, Symfony</p></li>
+            <li><p>HTML, CSS, Javascript</p></li>
+            <li><p>Hébergement de site web</p></li>
+        </ul>
+
+        <h3>Information</h3>
+        <p>
+            Un portfolio est un dossier personnel dans lequel les acquis de formation et les acquis de l'expérience d'une personne sont définis et démontrés en vue d'une
+            reconnaissance par un établissement d'enseignement ou un employeur. En France, on voit parfois le terme de portefeuille de compétences.
+        </p>
+
+        <h3>Code Source</h3>
+        <a href="https://github.com/allanpon/portfolio"><p>Github</p></a>
+    </div>
+
+    <div class="projet">
+        <h2>Labyrinthe</h2>
+
+        <h3>Compétences</h3>
+        <ul>
+            <li><p>Communication, travail d'équipe</p></li>
+            <li><p>Java, POO</p></li>
+            <li><p>Git</p></li>
+        </ul>
+
+        <h3>Information</h3>
+        <p>
+            Réalisation d'un clone du jeu de plateau Labyrinthe en Java. Ce projet a été fait en équipe. J'étais chargé d'assurer la communication dans mon équipe, ainsi que d'assurer la
+            communication entre mon équipe et les enseignants. J'ai assuré la communication entre les enseignants et les étudiants pour qu'ils puissent voir l'évolution de notre projet
+            ou pour que nous puissions poser des questions si nous en avions.
+        </p>
+
+        <h3>Code Source</h3>
+        <a href="https://github.com/allanpon/labyrinthe"><p>Github</p></a>
+    </div>
+
+    <div class="projet">
+        <h2>Python Challenge</h2>
+        <h3>Compétences</h3>
+        <ul>
+            <li><p>Algorithmie</p></li>
+            <li><p>Python</p></li>
+        </ul>
+
+        <h3>Information</h3>
+        <p>
+            Un petit challenge où l'on devait résoudre quelques problèmes en Python.
+        </p>
+
+        <h3>Code Source</h3>
+        <a href="https://github.com/allanpon/pythonchallenge2020"><p>Github</p></a>
     </div>
 {% endblock %}
